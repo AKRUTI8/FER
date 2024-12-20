@@ -1,0 +1,555 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="4nn1jHDs2PO8VLMjTH1mKBdUUtInUYpLJFFnj4NF">
+    <link rel="dns-prefetch" href="https://mescalero.noldus.com">
+    <title>Facial expression recognition</title>
+
+        <meta name="description" content="Looking for an automatic analysis of facial expressions? FaceReader is the complete facial expression recognition software, used worldwide.">
+    
+    <meta property="og:title" content="FaceReader | Facial expression analysis">
+    <meta property="og:description" content="Looking for an automatic analysis of facial expressions? FaceReader is the complete facial expression recognition software, used worldwide.">
+    
+    <meta property="og:image" content="https://mescalero.noldus.com/storage/page-images/facereader-20241017113112.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FaceReader | Facial expression analysis">
+    <meta name="twitter:description" content="Looking for an automatic analysis of facial expressions? FaceReader is the complete facial expression recognition software, used worldwide.">
+    <meta name="twitter:image" content="https://mescalero.noldus.com/storage/page-images/facereader-20241017113112.webp">
+
+    <link rel="preload" as="style" href="https://www.noldus.com/build/assets/app-CK1Y_FMn.css"><link rel="stylesheet" href="https://www.noldus.com/build/assets/app-CK1Y_FMn.css" data-navigate-track="reload">    <!-- Cookie Consent --><script src="https://js.hs-analytics.net/analytics/1734710700000/96806.js" type="text/javascript" id="hs-analytics"></script><script src="https://js.hs-banner.com/v2/96806/banner.js" type="text/javascript" id="cookieBanner-96806" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="96806" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script async="" src="https://analytics.noldus.com/matomo.js"></script><script type="text/javascript" async="" src="https://bat.bing.com/bat.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-C8Z3E6QQNX&amp;l=dataLayer&amp;cx=c&amp;gtm=45He4cc1v77377551za200"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-1070297095&amp;l=dataLayer&amp;cx=c&amp;gtm=45He4cc1v77377551za200"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W4T4VKL"></script><script src="https://www.noldus.com/cookie-consent/script?id=75a7fb13b8beff8bfe03b2d3bfdd142f" defer="" type="text/javascript"></script>
+    <!-- Google Tag Manager -->
+    <script type="text/javascript">
+        (function(w,d,s,l,i){
+            w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W4T4VKL');
+    </script>
+<!-- Livewire Styles --><style>[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}</style>
+<script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1070297095/?random=1734707240573&amp;cv=11&amp;fst=1734707240573&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4cc1v9168270894z877377551za201zb77377551&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101925629~102067555~102067808~102081485~102198178&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fwww.noldus.com%2Ffacereader&amp;ref=https%3A%2F%2Fwww.noldus.com%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=FaceReader%20%7C%20Facial%20expression%20analysis%20%7C%20Noldus&amp;npa=0&amp;pscdl=noapi&amp;auid=1442753218.1729919511&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;rfmt=3&amp;fmt=4"></script><script src="https://bat.bing.com/p/action/17530594.js" type="text/javascript" async="" data-ueto="ueto_0007294f73"></script><style>/* Make clicks pass-through */
+
+    #nprogress {
+      pointer-events: none;
+    }
+
+    #nprogress .bar {
+      background: var(--livewire-progress-bar-color, #29d);
+
+      position: fixed;
+      z-index: 1031;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+    }
+
+    /* Fancy blur effect */
+    #nprogress .peg {
+      display: block;
+      position: absolute;
+      right: 0px;
+      width: 100px;
+      height: 100%;
+      box-shadow: 0 0 10px var(--livewire-progress-bar-color, #29d), 0 0 5px var(--livewire-progress-bar-color, #29d);
+      opacity: 1.0;
+
+      -webkit-transform: rotate(3deg) translate(0px, -4px);
+          -ms-transform: rotate(3deg) translate(0px, -4px);
+              transform: rotate(3deg) translate(0px, -4px);
+    }
+
+    /* Remove these to get rid of the spinner */
+    #nprogress .spinner {
+      display: block;
+      position: fixed;
+      z-index: 1031;
+      top: 15px;
+      right: 15px;
+    }
+
+    #nprogress .spinner-icon {
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+
+      border: solid 2px transparent;
+      border-top-color: var(--livewire-progress-bar-color, #29d);
+      border-left-color: var(--livewire-progress-bar-color, #29d);
+      border-radius: 50%;
+
+      -webkit-animation: nprogress-spinner 400ms linear infinite;
+              animation: nprogress-spinner 400ms linear infinite;
+    }
+
+    .nprogress-custom-parent {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .nprogress-custom-parent #nprogress .spinner,
+    .nprogress-custom-parent #nprogress .bar {
+      position: absolute;
+    }
+
+    @-webkit-keyframes nprogress-spinner {
+      0%   { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes nprogress-spinner {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    </style></head>
+<body>
+
+<!-- Google Tag Manager (no script) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4T4VKL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header class="menu_area-light">
+        <div class="navbar-default">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="menu_area alt-font">
+                            <nav class="navbar navbar-expand-lg navbar-light p-0" style="z-index: 1000">
+    
+    <div class="navbar-toggler"></div>
+    <ul class="navbar-nav ms-auto" id="nav" style="">
+        <li>
+            <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Home', 'Home page | main-menu']);">Home</a>
+        </li>
+        <li class="has-sub"><span class="submenu-button"></span>
+            <a href="#!" class="noldus-link">Software</a>
+            <ul class="sub-menu" style="">
+                <li class="has-sub"><span class="submenu-button"></span>
+                    <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Human Behavior', 'Human Behavior page | main-menu']);">Human Behavior</a>
+                    <ul class="sub-menu" style="display: block;">
+                        <li>
+                            <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'NoldusHub', 'NoldusHub page | main-menu']);">NoldusHub</a>
+                        </li>
+                        <li>
+                            <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Viso', 'Viso page | main-menu']);">Viso</a>
+                        </li>
+                        <li>
+                            <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'The Observer XT', 'The Observer XT page | main-menu']);">The Observer XT</a>
+                        </li>
+                        <li>
+                            <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'FaceReader', 'FaceReader page | main-menu']);">FaceReader</a>
+                        </li>
+                        <li>
+                            <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'MediaRecorder', 'MediaRecorder page | main-menu']);">MediaRecorder</a>
+                        </li>
+                        <li>
+                            <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'TrackLab', 'TrackLab page | main-menu']);">TrackLab</a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </li>
+        <li class="has-sub"><span class="submenu-button"></span>
+            <a href="#!" class="noldus-link">Hardware</a>
+            <ul class="sub-menu" style="">
+                <li class="has-sub"><span class="submenu-button"></span>
+                    <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Human Behavior', 'Human Behavior page | main-menu']);">Human Behavior</a>
+                    <ul class="sub-menu" style="display: block;">
+                        <li>
+                            <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Eye Trackers', 'Eye Trackers page | main-menu']);">Eye Trackers</a>
+                        </li>
+                        <li>
+                            <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Data Acquisition Systems', 'Data Acquisition Systems page | main-menu']);">Data Acquisition Systems</a>
+                        </li>
+                        <li>
+                            <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Labs', 'Labs page | main-menu']);">Labs</a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </li>
+
+                    <li class="has-sub"><span class="submenu-button"></span>
+                <a href="#!" class="noldus-link">Applications</a>
+                <ul class="sub-menu" style="">
+                    <li class="has-sub"><span class="submenu-button"></span>
+                        <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Human Behavior', 'Human Behavior page | main-menu']);">Human Behavior</a>
+                        <ul class="sub-menu" style="display: block;">
+                            <li>
+                                <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Psychology Research', 'Psychology Research page | main-menu']);">Psychology research</a>
+                            </li>
+                            <li>
+                                <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Emotion Analysis', 'Emotion Analysis page | main-menu']);">Emotion analysis</a>
+                            </li>
+                            <li>
+                                <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Education &amp; Training', 'Education &amp; Training page | main-menu']);">Education &amp; training</a>
+                            </li>
+                            <li>
+                                <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Behavioral Economics', 'Behavioral Economics page | main-menu']);">Behavioral economics</a>
+                            </li>
+                            <li>
+                                <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Consumer Behavior Research', 'Consumer Behavior Research page | main-menu']);">Consumer behavior research</a>
+                            </li>
+                            <li>
+                                <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Neuroscience', 'Neuroscience page | main-menu']);">Neuroscience</a>
+                            </li>
+                            <li>
+                                <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Human Factors', 'Human Factors page | main-menu']);">Human factors</a>
+                            </li>
+                            <li>
+                                <a href="" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'User Experience', 'User Experience page | main-menu']);">User experience</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </li>
+        
+
+                    <li class="has-sub"><span class="submenu-button"></span>
+                                    <a href="" target="_self" class="noldus-link" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'FaceReader', 'FaceReader page | main-menu']);">
+                        FaceReader
+                    </a>
+                                                    <ul class="sub-menu" style="">
+                                                    <li>
+                                                                    <a href="" class="noldus-link" target="_self" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Benefits', 'Benefits page | main-menu']);">
+                                        Benefits
+                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="" class="noldus-link" target="_self" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Applications', 'Applications page | main-menu']);">
+                                        Applications
+                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="" class="noldus-link" target="_self" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'System setup', 'System setup page | main-menu']);">
+                                        System setup
+                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="" class="noldus-link" target="_self" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Resources', 'Resources page | main-menu']);">
+                                        Resources
+                                    </a>
+                                                            </li>
+                                                    <li>
+                                                                    <a href="" class="noldus-link" target="_self" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Text Link Click - Main Menu', 'Options', 'Options page | main-menu']);">
+                                        Options
+                                    </a>
+                                                            </li>
+                                            </ul>
+                            </li>
+        
+                    
+    
+        
+        
+    
+</nav>
+
+
+
+
+                        
+            </div>
+            
+                    
+    <script type="text/javascript">
+        function handleEnterKey(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent form submission
+                document.getElementById('message').style.display = 'block'; // Show the message
+            } else {
+                document.getElementById('message').style.display = 'none'; // Hide the message when other keys are pressed
+            }
+        }
+    </script>
+    <!--[if ENDBLOCK]><![endif]-->
+</div>
+                    </div>
+
+                </div>
+            </div>
+            <script type="text/javascript">
+                function toggleDiv() {
+                    var div = document.getElementById('showSearch');
+                    div.classList.toggle('show');
+                }
+            </script>
+        </div>
+    </header>
+
+      <div id="toast" class="toast"></div>
+
+    <div class="page-content">
+        <section class="color-noldus-green-light">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 mb-1-9 mb-lg-0">
+                <div class="pe-lg-5">
+<h2 class="font-weight-400">Get the best facial expression data</h2>
+                    <h1 class="font-weight-600">FaceReader</h1>
+                    <p class="mb-3 mb-lg-4 mt-4 noldus-font-size-medium"> FaceReader is the most robust automated system for accurate and reliable data about facial expressions. </p>
+                    <ul class="list-style-14 list-unstyled noldus-font-size-medium">
+                        <li>Clear insights into the effects of different stimuli on emotions</li>
+                        <li>Fast and easy to use: save valuable time and resources</li>
+                        <li>Easy integration with eye tracking data and physiology data</li>
+                    </ul>
+                    <a href="" class="butn-style3 text-uppercase mt-5 mb-3" onclick="if (!window.__cfRLUnblockHandlers) return false; _paq.push(['trackEvent', 'Button Click', 'Get More Info', 'FaceReader Contact Page | 67']);">Get more info</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="story-video bg-img cover-background video-image border-radius-5 box-shadow-primary" data-background=" https://mescalero.noldus.com/storage/images/fr-thumbnail-demo-fr-9-20240403112158.webp" alt="FaceReader demo screenshot" style="background-image: url(&quot;https://mescalero.noldus.com/storage/images/fr-thumbnail-demo-fr-9-20240403112158.webp&quot;);">
+                    <div class="opacity-very-light bg-white"></div>
+                    <div class="text-center position-absolute top-50 start-50 translate-middle z-index-1"> <a class="popup-youtube" href=" https://youtube.com/watch?v=0vlJ-8gXMII">
+                            <span class="video_btn me-2"> <i class="fas fa-play"></i> </span> </a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section>
+    <div class="container">
+        <div class="section-heading pb-2">
+            <h2>Why should I measure facial expressions?</h2>
+        </div>
+        <div class="row align-items-top">
+            <div class="col-lg-6 mb-1-9 mb-lg-0">
+                <img src="https://mescalero.noldus.com/storage/images/fr-integrated-image-male-20241119162251.webp" class="border-radius-5 box-shadow-primary img-fluid" alt="FaceReader image AUS and emotion intensity">
+            </div>
+            <div class="col-lg-6 ps-2 ps-sm-5">
+                <p class="noldus-font-size-medium">Facial expression analysis provides insights into people's emotions, behaviors, and decision-making. It's an important part of emotion analysis.</p>
+<h5>When to include facial expressions</h5> 
+<p class="noldus-font-size-medium">You may want to include facial expression analysis in your work if you're studying consumer behavior or user experience.</p> 
+  <p class="noldus-font-size-medium">It's also the perfect choice for research on social interactions, developmental psychology, or mental illness.</p>
+            </div>
+
+        </div>
+    </div>
+</section><section>
+    <div class="container">
+        <div class="row align-items-top">
+            <div class="section-heading">
+                <h2>What can you measure with FaceReader?</h2>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 mb-1-9 mb-lg-0">
+                <img class="border-radius-5 box-shadow-primary img-fluid" src="https://mescalero.noldus.com/storage/images/fr-laptop-showing-fr-output-20241126082414.webp" alt="FaceReader output on laptop" loading="lazy">
+            </div>
+            <div class="col-lg-6 order-2 order-lg-1 ps-2 pe-sm-5">
+                <p class="noldus-font-size-medium">FaceReader<sup>TM</sup> analyzes the six universal expressions: happy, sad, angry, surprised,
+                    scared, and disgusted, plus contempt and a neutral state.</p> 
+<h5>How to expand your setup</h5>
+<p class="noldus-font-size-medium">You can also include Action Unit measurements and define your own custom expressions. Other options include measuring heart rate, eating and drinking behavior, or infants expressions.</p> 
+<p class="noldus-font-size-medium">Looking for more flexibility? FaceReader Online allows you to collect your facial expression data from anywhere.</p>
+               
+            </div>
+        </div>
+    </div>
+</section><section class="box-hover">
+    <div class="container">
+
+        <div class="row mt-n1-9 position-relative">
+            <div class="col-lg-3 mt-1-9 blog-style1">
+                <div class="item">
+                    <div class="bg-img cover-background square-image border-radius-5" data-background="https://mescalero.noldus.com/storage/images/woman-eating-kitchen-face-finding-facereader-20240404134929.webp" alt="FaceReader face finding" style="background-image: url(&quot;https://mescalero.noldus.com/storage/images/woman-eating-kitchen-face-finding-facereader-20240404134929.webp&quot;);">
+                    </div>
+                    <div class="p-3">
+                        <h4 class="mb-2 font-weight-600">Accurate classification</h4>
+<div class="title-separator"></div>
+                        <p class="noldus-font-size-smaller">FaceReader 9 has an average accuracy of <strong>99%</strong>
+                            in measuring the six basic expressions. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-1-9 blog-style1">
+                <div class="item">
+                    <div class="bg-img cover-background square-image border-radius-5" data-background="https://mescalero.noldus.com/storage/images/working-from-home-woman-behind-laptop-facereader-20240404134508.webp" alt="Woman working with FaceReader at home" style="background-image: url(&quot;https://mescalero.noldus.com/storage/images/working-from-home-woman-behind-laptop-facereader-20240404134508.webp&quot;);">
+                    </div>
+                    <div class="p-3">
+                        <h4 class="mb-2 font-weight-600">Instant results and visualizations</h4>
+<div class="title-separator"></div>
+                        <p class="noldus-font-size-smaller">FaceReader analyzes and visualizes your emotion data
+                            immediately.</p>
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-1-9 blog-style1">
+                <div class="item">
+                    <div class="bg-img cover-background square-image border-radius-5" data-background="https://mescalero.noldus.com/storage/images/happy-woman-yellow-background-facereader-action-units-20240404134642.webp" alt="FaceReader Action Units" style="background-image: url(&quot;https://mescalero.noldus.com/storage/images/happy-woman-yellow-background-facereader-action-units-20240404134642.webp&quot;);">
+                    </div>
+                    <div class="p-3">
+                        <h4 class="mb-2 font-weight-600">Detailed facial expressions</h4>
+<div class="title-separator"></div>
+                        <p class="noldus-font-size-smaller">Measure <a href="https://www.noldus.com/facereader/options#action-units" rel="noopener noreferrer">Action Units</a> to gain more insights and create your
+                            own custom expressions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-1-9 blog-style1">
+                <div class="item">
+                    <div class="bg-img cover-background square-image border-radius-5" data-background="https://mescalero.noldus.com/storage/images/women-working-laptop-notebook-window-20240404134002.webp" alt="Women working with laptop and notebook" style="background-image: url(&quot;https://mescalero.noldus.com/storage/images/women-working-laptop-notebook-window-20240404134002.webp&quot;);">
+                    </div>
+                    <div class="p-3">
+                        <h4 class="mb-2 font-weight-600">Most cited in publications</h4>
+<div class="title-separator"></div>
+                        <p class="noldus-font-size-smaller">FaceReader is <a href=" https://scholar.google.com/scholar?hl=en&amp;as_sdt=1%2C5&amp;as_vis=1&amp;q=%22facereader%22+AND+%22noldus%22&amp;btnG=" rel="noopener noreferrer" target="_blank">cited</a> and validated in over <strong>2,000</strong>
+                            peer-reviewed publications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div></section>
+                           
+ <section class="box-hover bg-white d-none d-md-block">
+<div id="try-yourself"></div>
+    <div class="container">
+        <div class="section-heading text-black-50">
+            <h2>Try FaceReader for yourself!</h2>
+        </div>
+        <p class="noldus-font-size-medium">Curious what emotions your face shows? Upload a photo here to see how FaceReader measures your emotions. Make sure to use a high-quality photo with enough light, where your face is clearly visible.</p>
+        
+        <div class="d-flex justify-content-center">
+            <iframe src="https://stream.facereader-online.com/FROnline.aspx?HideCamButton=true" class="border-0" name="myiFrame" scrolling="no" allowfullscreen="" width="100%" height="800px" frameborder="0">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<a href="#!" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+
+
+<link rel="modulepreload" href="https://www.noldus.com/build/assets/app-BziwsqBe.js"><script type="module" src="https://www.noldus.com/build/assets/app-BziwsqBe.js" data-navigate-track="reload"></script>
+<!-- External Scripts -->
+<script src="https://www.noldus.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://www.noldus.com/js/popper.min.js" type="text/javascript"></script>
+<script src="https://www.noldus.com/js/nav-menu.js" type="text/javascript"></script>
+<script src="https://www.noldus.com/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="https://www.noldus.com/js/owl.carousel.js" type="text/javascript"></script>
+
+
+<script src="https://www.noldus.com/js/main.js" type="text/javascript"></script>
+<script src="https://www.noldus.com/js/custom.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        var offset = 200;
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const offsetPosition = targetElement.getBoundingClientRect().top - offset;
+                    window.scrollBy({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        // Check screen width and apply JavaScript only if greater than 991px
+        const applyDropdownBehavior = () => {
+            const navItems = document.querySelectorAll('#nav > li');
+
+            if (window.innerWidth > 991) {
+                navItems.forEach(item => {
+                    let timeout;
+
+                    item.addEventListener('mouseenter', () => {
+                        clearTimeout(timeout);
+                        const submenu = item.querySelector('ul');
+                        if (submenu) {
+                            submenu.style.display = 'block';
+                            submenu.style.opacity = '1';
+                            submenu.style.visibility = 'visible';
+                        }
+                    });
+
+                    item.addEventListener('mouseleave', () => {
+                        timeout = setTimeout(() => {
+                            const submenu = item.querySelector('ul');
+                            if (submenu) {
+                                submenu.style.opacity = '0';
+                                submenu.style.visibility = 'hidden';
+                                submenu.style.display = 'none';
+                            }
+                        }, 300); // Adjust delay (in milliseconds)
+                    });
+                });
+            } else {
+                // Remove the event listeners and reset styles for smaller screens
+                navItems.forEach(item => {
+                    const submenu = item.querySelector('ul');
+                    if (submenu) {
+                        submenu.style.display = '';
+                        submenu.style.opacity = '';
+                        submenu.style.visibility = '';
+                    }
+                });
+            }
+        };
+
+        // Run on load
+        applyDropdownBehavior();
+
+        // Reapply on window resize
+        window.addEventListener('resize', applyDropdownBehavior);
+    });
+</script>
+
+<!-- Passive Event Listeners -->
+<script type="text/javascript">
+    !function(e) {
+        "function"==typeof define&&define.amd?define(e):e()
+    }(function() {
+        var e,t=["scroll","wheel","touchstart","touchmove","touchenter","touchend","touchleave","mouseout","mouseleave","mouseup","mousedown","mousemove","mouseenter","mousewheel","mouseover"];
+        if(function() {
+            var e=!1;
+            try {
+                var t=Object.defineProperty({},"passive",{get:function(){e=!0}});
+                window.addEventListener("test",null,t),window.removeEventListener("test",null,t)
+            } catch(e) {}
+            return e
+        }()) {
+            var n=EventTarget.prototype.addEventListener;
+            e=n,EventTarget.prototype.addEventListener=function(n,o,r) {
+                var i,s="object"==typeof r&&null!==r,u=s?r.capture:r;
+                (r=s?function(e){var t=Object.getOwnPropertyDescriptor(e,"passive");return t&&!0!==t.writable&&void 0===t.set?Object.assign({},e):e}(r):{}).passive=void 0!==(i=r.passive)?i:-1!==t.indexOf(n)&&!0,r.capture=void 0!==u&&u,e.call(this,n,o,r)
+            },EventTarget.prototype.addEventListener._original=e
+        }
+    });
+</script>
+
+<!-- Start of HubSpot Embed Code -->
+<script async="" type="text/javascript" id="hs-script-loader" defer="" src="//js.hs-scripts.com/96806.js"></script>
+<!-- End of HubSpot Embed Code -->
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://analytics.noldus.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '4']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+<script src="https://www.noldus.com/vendor/livewire/livewire.min.js?id=02b08710" data-csrf="4nn1jHDs2PO8VLMjTH1mKBdUUtInUYpLJFFnj4NF" data-update-uri="/livewire/update" data-navigate-once="true" type="text/javascript"></script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8f50e452eb050337&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;297b5d729fd84134bcb9d3b9c8b74904&quot;}" crossorigin="anonymous"></script>
+
+
+<iframe allow="join-ad-interest-group" data-tagging-id="AW-1070297095" data-load-time="1734707240574" height="0" width="0" src="https://td.doubleclick.net/td/rul/1070297095?random=1734707240573&amp;cv=11&amp;fst=1734707240573&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4cc1v9168270894z877377551za201zb77377551&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101925629~102067555~102067808~102081485~102198178&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fwww.noldus.com%2Ffacereader&amp;ref=https%3A%2F%2Fwww.noldus.com%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=FaceReader%20%7C%20Facial%20expression%20analysis%20%7C%20Noldus&amp;npa=0&amp;pscdl=noapi&amp;auid=1442753218.1729919511&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1" style="display: none; visibility: hidden;"></iframe><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe><script type="text/javascript" id="" charset="">window.addEventListener("message",function(a){"hsFormCallback"===a.data.type&&"onFormSubmitted"===a.data.eventName&&window.dataLayer.push({event:"hubspot-form-success","hs-form-guid":a.data.id})});</script><div style="display: none; visibility: hidden;"><script>var c=document.getElementById("block-system-main");"undefined"!==typeof c&&c.addEventListener("copy",function(a){dataLayer.push({event:"copy","copy-id":a.target.id,"copy-content":a.target.innerHTML})});</script></div><div id="batBeacon964178375788" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon187174791328" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=17530594&amp;tm=gtm002&amp;Ver=2&amp;mid=5e81bd07-f962-4d89-8029-a864dfc9a19f&amp;bo=1&amp;sid=4b1cf420bee211ef8c86a324d4ef19f6&amp;vid=0f2bcd50935911efb89f9f3b37c1756b&amp;vids=0&amp;msclkid=N&amp;uach=pv%3D15.0.0&amp;pi=-2084395585&amp;lg=en-US&amp;sw=1536&amp;sh=864&amp;sc=24&amp;tl=FaceReader%20%7C%20Facial%20expression%20analysis%20%7C%20Noldus&amp;p=https%3A%2F%2Fwww.noldus.com%2Ffacereader&amp;r=https%3A%2F%2Fwww.noldus.com%2F&amp;lt=9007&amp;mtp=256&amp;evt=pageLoad&amp;sv=1&amp;cdb=AQAQ&amp;rn=127496" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div></body></html>
